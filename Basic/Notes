@@ -1,0 +1,16 @@
+Que:-How To Handle drop	down elements with select tag..??
+
+Ans:-	we can handle drop down with the help of Select class First we have to create the object of 
+		Select class by passing the WebElement Instance...
+
+				Select sel = new Select(WebElement Instance);
+
+		Then by using that object we can handle the drop down..
+		To select options from drop	down we can use three methods...
+		
+		sel.selectByIndex()  			........ 	insert index integer
+		sel.selectByValue()				........ 	insert value in string
+		sel.selectByVisibleText()		........ 	insert visible text in string
+		
+		
+		To capture the selected options we use "getFirstSelectedOption()" method and the return type of this method is WebElement
